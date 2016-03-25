@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+BUF=`apt-get update`
+APT_GET_LINE=`apt-get upgrade -s | grep "upgraded,"`
+NUM_PACKAGES=($APT_GET_LINE)
+COLOR="#A6E22E"
+
+if $NUM_PACKAGES == 0; then
+    echo $COLOR
+    COLOR="#F92672"
+fi
+
+echo $NUM_PACKAGES
+echo $NUM_PACKAGES
+echo $COLOR

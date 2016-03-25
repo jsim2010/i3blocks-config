@@ -28,6 +28,16 @@ command=~/.config/i3blocks/blocks/$BLOCK_NAME
 separator_block_width=15
 #markup=none
 
+# TODO: Get i3blocks colors based off wind
+
+
+# TODO: Add git repository status
+# QUESTION: Where should the git repo status search for git repos?
+# Apt-get Update status
+[update]
+label=UP:
+interval=3600
+
 # Pianobar status
 #
 # Display the artist and title of the song playing on pianobar
